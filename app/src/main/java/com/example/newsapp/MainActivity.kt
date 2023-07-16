@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.newsapp.databinding.ActivityMainBinding
+import com.example.newsapp.utils.Constants.Companion.DELAY
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             bottom_nav_menu.setupWithNavController(
                 navController = nav_host_fragment.findNavController()
             )
-        }, 5000)
+        }, DELAY)
     }
 
     override fun onDestroy() {
